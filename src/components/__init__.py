@@ -1,0 +1,1 @@
+# components are basically the modules we are going to use in this project 
