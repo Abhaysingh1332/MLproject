@@ -2,6 +2,7 @@
 # any exception that is going to be control the sys library will have information 
 # to see code written here for exception handling open custom exception handling in python documentation 
 import sys
+from src.logger import logging
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb = error_detail.exc_info()
     file_name = exc_tb.tb_frame.f_code.co_filename
@@ -17,3 +18,4 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message
+
